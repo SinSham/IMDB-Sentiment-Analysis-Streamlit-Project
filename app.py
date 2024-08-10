@@ -24,9 +24,9 @@ def predict_sentiment(review):
   sentiment = "positive" if prediction[0][0] > 0.5 else "negative"
   return sentiment
 
-model = load_model('/Users/shambhavisingh/Downloads/Streamlit App/static/IMDB_sentiment_analyzer__model (1).h5')
+model = load_model('static/IMDB_sentiment_analyzer__model (1).h5')
 
-with open('/Users/shambhavisingh/Downloads/Streamlit App/static/tokenizer.pkl', 'rb') as f:
+with open('static/tokenizer.pkl', 'rb') as f:
     tokenizer = pickle.load(f)
 
 # Streamlit app
