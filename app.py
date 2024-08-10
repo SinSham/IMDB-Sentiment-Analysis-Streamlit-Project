@@ -37,7 +37,7 @@ with open('tokenizer.pkl', 'rb') as f:
     tokenizer = pickle.load(f)
 
 # Streamlit app
-st.title("SentiMeter")
+st.title("Welcome to SentiMeter!")
 
 st.write("Enter a movie review below and get the sentiment prediction:")
 
